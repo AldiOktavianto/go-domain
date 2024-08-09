@@ -4,7 +4,7 @@ import (
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 
-	_prDelivery "prisca-domain/module/proc/delivery/rest"
+	_prDelivery "github.com/AldiOktavianto/go-domain/module/proc/delivery/rest"
 )
 
 func main() {

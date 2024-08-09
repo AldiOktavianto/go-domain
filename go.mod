@@ -1,4 +1,4 @@
-module prisca-domain
+module github.com/AldiOktavianto/go-domain
 
 go 1.21.5
 
