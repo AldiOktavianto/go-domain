@@ -3,7 +3,6 @@ package rest
 import (
 	"encoding/json"
 	"fmt"
-	"log"
 	"net/http"
 
 	"github.com/labstack/echo"
@@ -40,9 +39,9 @@ func (h *PrHandler) postPr(e echo.Context) error {
 	if err != nil {
 		return e.JSON(http.StatusInternalServerError, err)
 	}
-	log.Println(StructToJson(reqBody))
+
 	message := fmt.Sprintf("HELLO %s!", reqBody.Name)
-	log.Println(message)
+
 	return e.JSON(http.StatusOK, PostPrResponse{Message: message})
 }
 
